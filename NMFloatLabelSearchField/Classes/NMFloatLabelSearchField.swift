@@ -2,7 +2,14 @@
 //  NMFloatLabelSearchField.swift
 //  NMFloatLabelSearchField
 //
-//  Created by Noor on 3/12/18.
+//  Modified by Noor on 3/12/18.
+//
+//  Original Contributer
+//  SearchTextField.swift
+//  SearchTextField
+//
+//  Originally Created by Alejandro Pasccon on 4/20/16.
+//  Copyright © 2016 Alejandro Pasccon. All rights reserved.
 //
 
 import UIKit

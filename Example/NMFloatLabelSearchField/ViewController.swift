@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  NMFloatLabelSearchField
 //
-//  Created by noorulain.ali89@gmail.com on 03/11/2018.
-//  Copyright (c) 2018 noorulain.ali89@gmail.com. All rights reserved.
+//  Created by Noor on 03/11/2018.
+//  Copyright (c) 2018 Namshi. All rights reserved.
 //
 
 import UIKit
