@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="NMFloatLabelSearchField_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MBJ-id-jXG" userLabel="Simple" customClass="NMFloatLabelSearchField" customModule="NMFloatLabelSearchField_Example" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="40" width="300" height="40"/>
+                                <color key="backgroundColor" red="0.81176470590000005" green="0.81176470590000005" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Ay7-jc-dfW"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Simple"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="v5D-ks-OVG" userLabel="Custom" customClass="NMFloatLabelSearchField" customModule="NMFloatLabelSearchField_Example" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="100" width="300" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Custom"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6kB-Tg-Bi9" userLabel="SimpleInline" customClass="NMFloatLabelSearchField" customModule="NMFloatLabelSearchField_Example" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="160" width="300" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Simple Inline"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h2T-9N-q27" userLabel="CustomInline" customClass="NMFloatLabelSearchField" customModule="NMFloatLabelSearchField_Example" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="220" width="300" height="40"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Custom Inline"/>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="v5D-ks-OVG" firstAttribute="top" secondItem="MBJ-id-jXG" secondAttribute="bottom" constant="20" id="2hN-fa-n5h"/>
+                            <constraint firstItem="6kB-Tg-Bi9" firstAttribute="centerX" secondItem="v5D-ks-OVG" secondAttribute="centerX" id="8d5-w2-YIj"/>
+                            <constraint firstItem="MBJ-id-jXG" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" multiplier="0.8" id="DOs-hS-FOh"/>
+                            <constraint firstItem="MBJ-id-jXG" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="HGI-sp-3Wy"/>
+                            <constraint firstItem="6kB-Tg-Bi9" firstAttribute="height" secondItem="MBJ-id-jXG" secondAttribute="height" id="JE8-JA-3bD"/>
+                            <constraint firstItem="6kB-Tg-Bi9" firstAttribute="top" secondItem="v5D-ks-OVG" secondAttribute="bottom" constant="20" id="JgO-VU-Hk2"/>
+                            <constraint firstItem="6kB-Tg-Bi9" firstAttribute="width" secondItem="MBJ-id-jXG" secondAttribute="width" id="PXB-fG-eNO"/>
+                            <constraint firstItem="h2T-9N-q27" firstAttribute="top" secondItem="6kB-Tg-Bi9" secondAttribute="bottom" constant="20" id="ROe-fC-qh0"/>
+                            <constraint firstItem="v5D-ks-OVG" firstAttribute="width" secondItem="MBJ-id-jXG" secondAttribute="width" id="SSB-t3-BQR"/>
+                            <constraint firstItem="h2T-9N-q27" firstAttribute="height" secondItem="MBJ-id-jXG" secondAttribute="height" id="ZE9-sc-NBk"/>
+                            <constraint firstItem="v5D-ks-OVG" firstAttribute="centerX" secondItem="MBJ-id-jXG" secondAttribute="centerX" id="aRF-UQ-s5F"/>
+                            <constraint firstItem="h2T-9N-q27" firstAttribute="width" secondItem="MBJ-id-jXG" secondAttribute="width" id="fsr-ca-Ae7"/>
+                            <constraint firstItem="v5D-ks-OVG" firstAttribute="height" secondItem="MBJ-id-jXG" secondAttribute="height" id="rTK-3i-nPb"/>
+                            <constraint firstItem="MBJ-id-jXG" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="20" id="utX-Ze-R8h"/>
+                            <constraint firstItem="h2T-9N-q27" firstAttribute="centerX" secondItem="6kB-Tg-Bi9" secondAttribute="centerX" id="wrT-FJ-7Vm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="customInlineSearchField" destination="h2T-9N-q27" id="tJ0-4g-0ct"/>
+                        <outlet property="customSearchField" destination="v5D-ks-OVG" id="Aab-3V-6SD"/>
+                        <outlet property="simpleInlineSearchField" destination="6kB-Tg-Bi9" id="ulf-Dl-LWK"/>
+                        <outlet property="simpleSearchField" destination="MBJ-id-jXG" id="GNR-pz-Pf8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

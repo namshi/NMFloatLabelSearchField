@@ -1,0 +1,6 @@
+framework module NMFloatLabelSearchField {
+  umbrella header "NMFloatLabelSearchField-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,935 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0CDDFD61CC55FA4C35FDAD23565E2906 /* SkyFloatingLabelTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */; };
+		1A8F207EBDB6A1E245509801653AD9C9 /* NMFloatLabelSearchField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF27122C442B21CF327BC0FED8DE3DB /* NMFloatLabelSearchField.swift */; };
+		31A16C4CF094A6CF1247529E0A480C25 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */; };
+		34928B02A41F368DFA60867BC5391738 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */; };
+		3E19C52B28D13326C9D877C4BBFC60A0 /* Pods-NMFloatLabelSearchField_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F9B3F308A8139B46E083F5D6C12B9BA1 /* Pods-NMFloatLabelSearchField_Example-dummy.m */; };
+		4AE760D2459FAB87B5EAEDB1DEE64B8C /* UITextField+fixCaretPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */; };
+		5C61D7509434C316724F0B9CD36CABD1 /* NMFloatLabelSearchField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B56DD070065399ED0D14823686D6894 /* NMFloatLabelSearchField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5CF85C72DDE498862AE91BE809B69364 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C02D02D2B967B11E2FA3672F2D62A780 /* UIKit.framework */; };
+		6122B6604EB20C47E741B1DE6E444A38 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */; };
+		88EA9B9059B70BA79690911D8B13609F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */; };
+		9E9C51602D55D2E480D1E94FC8DD2CE0 /* Pods-NMFloatLabelSearchField_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7041E83DBCB9F341CD35970C76E82CA0 /* Pods-NMFloatLabelSearchField_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4DFABC5B303AC6A7AB155922ED66542 /* NMFloatLabelSearchField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3505DE75DB8D7CB0D5F19362338FC26 /* NMFloatLabelSearchField-dummy.m */; };
+		D940999F93DBCAE42502BFA24819A78C /* Pods-NMFloatLabelSearchField_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 513D1EDFBA735E366FF25E6577C00316 /* Pods-NMFloatLabelSearchField_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DD8053BD5427FB4469545288BFED89B1 /* SkyFloatingLabelTextField-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CC73AA8035BD4108AD320A107A91F85C /* SkyFloatingLabelTextField-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DE599D3474F3C8C3D0E06F7828E28F12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */; };
+		DE660AFCBC100CA188719FAE176B87A3 /* SkyFloatingLabelTextField.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38D1D425F36B390A3725C9BDAC38D1CA /* SkyFloatingLabelTextField.framework */; };
+		E247892C6F4F5BD1D78E0FBC6A65DBE9 /* SkyFloatingLabelTextField-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 477402675ED0A2988A6B58AC17AAFFA7 /* SkyFloatingLabelTextField-dummy.m */; };
+		EF05A20302F182F436EC6B77B6D4BDC5 /* Pods-NMFloatLabelSearchField_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE37D7B71A1D7EE32B8D757213CAF897 /* Pods-NMFloatLabelSearchField_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1811206871FBD9B36A7493DD1C1EC00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9915FEF128A69C7BF9F438685BC2A3;
+			remoteInfo = NMFloatLabelSearchField;
+		};
+		3859E0F187E5B3749AC3ACA92F0926D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8469D7974BF9C5D13E2E1D99221E8C;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+		4424D96ED75265D8DB6447756EADB6F4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C8469D7974BF9C5D13E2E1D99221E8C;
+			remoteInfo = SkyFloatingLabelTextField;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05EDFB51521564B45F124EB90C58A8E4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CF27122C442B21CF327BC0FED8DE3DB /* NMFloatLabelSearchField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NMFloatLabelSearchField.swift; path = NMFloatLabelSearchField/Classes/NMFloatLabelSearchField.swift; sourceTree = "<group>"; };
+		0F05DBE786859C41FC3FA8F514027F13 /* NMFloatLabelSearchField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = NMFloatLabelSearchField.modulemap; sourceTree = "<group>"; };
+		18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextFieldWithIcon.swift; path = Sources/SkyFloatingLabelTextFieldWithIcon.swift; sourceTree = "<group>"; };
+		2148F4E676D16840B5A25254668E0FEB /* NMFloatLabelSearchField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMFloatLabelSearchField-prefix.pch"; sourceTree = "<group>"; };
+		2B56DD070065399ED0D14823686D6894 /* NMFloatLabelSearchField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NMFloatLabelSearchField-umbrella.h"; sourceTree = "<group>"; };
+		2FF39E15A80BCA2587010EB0A2185F47 /* Pods-NMFloatLabelSearchField_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMFloatLabelSearchField_Example-resources.sh"; sourceTree = "<group>"; };
+		3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		38D1D425F36B390A3725C9BDAC38D1CA /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		477402675ED0A2988A6B58AC17AAFFA7 /* SkyFloatingLabelTextField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SkyFloatingLabelTextField-dummy.m"; sourceTree = "<group>"; };
+		4EF94640C5E5F35C5FF2321654D974A3 /* Pods-NMFloatLabelSearchField_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMFloatLabelSearchField_Example.release.xcconfig"; sourceTree = "<group>"; };
+		513D1EDFBA735E366FF25E6577C00316 /* Pods-NMFloatLabelSearchField_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMFloatLabelSearchField_Tests-umbrella.h"; sourceTree = "<group>"; };
+		585821D237F01ACA7649522D886E38A9 /* Pods-NMFloatLabelSearchField_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NMFloatLabelSearchField_Tests.modulemap"; sourceTree = "<group>"; };
+		60DB3DB5335E7CD46D91874EA2784991 /* SkyFloatingLabelTextField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SkyFloatingLabelTextField.framework; path = SkyFloatingLabelTextField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		619A2F978126C1F03A25D69D43C89141 /* Pods_NMFloatLabelSearchField_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMFloatLabelSearchField_Example.framework; path = "Pods-NMFloatLabelSearchField_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		65B2DB9179C3A3B6F3DC40457D604CEC /* Pods-NMFloatLabelSearchField_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMFloatLabelSearchField_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6608E331E155F27E069B85E5E8B66DD2 /* Pods-NMFloatLabelSearchField_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMFloatLabelSearchField_Tests-resources.sh"; sourceTree = "<group>"; };
+		7041E83DBCB9F341CD35970C76E82CA0 /* Pods-NMFloatLabelSearchField_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-NMFloatLabelSearchField_Example-umbrella.h"; sourceTree = "<group>"; };
+		73AB35B9C61E8DBBAFD486A1194C147F /* NMFloatLabelSearchField.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = NMFloatLabelSearchField.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		74EAFFA63BDBF87A5C676998FD597C07 /* NMFloatLabelSearchField.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = NMFloatLabelSearchField.framework; path = NMFloatLabelSearchField.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79FAAC39FD3DEE95401B4A7E6325DB6C /* Pods_NMFloatLabelSearchField_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_NMFloatLabelSearchField_Tests.framework; path = "Pods-NMFloatLabelSearchField_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		825BA34A62B233E2A15F96C5B5FB4CF3 /* Pods-NMFloatLabelSearchField_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NMFloatLabelSearchField_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8265D8EED583E06E885CEEF27CE36211 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		828DED596115FAF06D1E1484F23F0A0E /* Pods-NMFloatLabelSearchField_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-NMFloatLabelSearchField_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8547A24E961A2A286801CCA0B57DA15D /* SkyFloatingLabelTextField-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		945FCBE22B9DC9A313DF70ED2388043A /* Pods-NMFloatLabelSearchField_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMFloatLabelSearchField_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		96021B73AB3076CE469755681DF3DADF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A36081925C1D95A24B7C826FA5EA7285 /* Pods-NMFloatLabelSearchField_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMFloatLabelSearchField_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		A68D0B8B8EAC5811057C77B6B30250AA /* NMFloatLabelSearchField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = NMFloatLabelSearchField.xcconfig; sourceTree = "<group>"; };
+		AE7C4056645C3AE5A38CE701FD03BF65 /* Pods-NMFloatLabelSearchField_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-NMFloatLabelSearchField_Example.modulemap"; sourceTree = "<group>"; };
+		B8A84854F9B7A544470C1FD9A14D6E6B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C02D02D2B967B11E2FA3672F2D62A780 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC73AA8035BD4108AD320A107A91F85C /* SkyFloatingLabelTextField-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SkyFloatingLabelTextField-umbrella.h"; sourceTree = "<group>"; };
+		CF536E2A36AF5426B119EA4A20475CFD /* SkyFloatingLabelTextField.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SkyFloatingLabelTextField.modulemap; sourceTree = "<group>"; };
+		D4B41BE8D4CB4B6421A83E322438D21F /* SkyFloatingLabelTextField.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SkyFloatingLabelTextField.xcconfig; sourceTree = "<group>"; };
+		DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SkyFloatingLabelTextField.swift; path = Sources/SkyFloatingLabelTextField.swift; sourceTree = "<group>"; };
+		DD54F979FE2EBC67418CD26AA8DB6E7A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		DE37D7B71A1D7EE32B8D757213CAF897 /* Pods-NMFloatLabelSearchField_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NMFloatLabelSearchField_Tests-dummy.m"; sourceTree = "<group>"; };
+		DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+fixCaretPosition.swift"; path = "Sources/UITextField+fixCaretPosition.swift"; sourceTree = "<group>"; };
+		E18C67059018BE2B3B803B25D59F01C3 /* Pods-NMFloatLabelSearchField_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-NMFloatLabelSearchField_Example-frameworks.sh"; sourceTree = "<group>"; };
+		E91D9EE3537AB063D23515F2FB8E701D /* Pods-NMFloatLabelSearchField_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-NMFloatLabelSearchField_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		F0A19181FC15205792DA56733CF201BB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F25F1D48731F0AF5030906CDACEA2F93 /* Pods-NMFloatLabelSearchField_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMFloatLabelSearchField_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F3505DE75DB8D7CB0D5F19362338FC26 /* NMFloatLabelSearchField-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NMFloatLabelSearchField-dummy.m"; sourceTree = "<group>"; };
+		F710614FA38A65D314322807319BB528 /* Pods-NMFloatLabelSearchField_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-NMFloatLabelSearchField_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		F9B3F308A8139B46E083F5D6C12B9BA1 /* Pods-NMFloatLabelSearchField_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-NMFloatLabelSearchField_Example-dummy.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3A079084B22305F7101B790F9A629BCC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				31A16C4CF094A6CF1247529E0A480C25 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC33D8D5187D848A5175B95364C131F3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88EA9B9059B70BA79690911D8B13609F /* Foundation.framework in Frameworks */,
+				DE660AFCBC100CA188719FAE176B87A3 /* SkyFloatingLabelTextField.framework in Frameworks */,
+				5CF85C72DDE498862AE91BE809B69364 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C465CEFFCDDC37D091631067C60F5F67 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6122B6604EB20C47E741B1DE6E444A38 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D049DBC4280C41F712DD45694009372E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE599D3474F3C8C3D0E06F7828E28F12 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		129FFC51C43819F014C1AED373CE4DE7 /* Pods-NMFloatLabelSearchField_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				05EDFB51521564B45F124EB90C58A8E4 /* Info.plist */,
+				585821D237F01ACA7649522D886E38A9 /* Pods-NMFloatLabelSearchField_Tests.modulemap */,
+				825BA34A62B233E2A15F96C5B5FB4CF3 /* Pods-NMFloatLabelSearchField_Tests-acknowledgements.markdown */,
+				A36081925C1D95A24B7C826FA5EA7285 /* Pods-NMFloatLabelSearchField_Tests-acknowledgements.plist */,
+				DE37D7B71A1D7EE32B8D757213CAF897 /* Pods-NMFloatLabelSearchField_Tests-dummy.m */,
+				945FCBE22B9DC9A313DF70ED2388043A /* Pods-NMFloatLabelSearchField_Tests-frameworks.sh */,
+				6608E331E155F27E069B85E5E8B66DD2 /* Pods-NMFloatLabelSearchField_Tests-resources.sh */,
+				513D1EDFBA735E366FF25E6577C00316 /* Pods-NMFloatLabelSearchField_Tests-umbrella.h */,
+				65B2DB9179C3A3B6F3DC40457D604CEC /* Pods-NMFloatLabelSearchField_Tests.debug.xcconfig */,
+				F710614FA38A65D314322807319BB528 /* Pods-NMFloatLabelSearchField_Tests.release.xcconfig */,
+			);
+			name = "Pods-NMFloatLabelSearchField_Tests";
+			path = "Target Support Files/Pods-NMFloatLabelSearchField_Tests";
+			sourceTree = "<group>";
+		};
+		23488C6F7AB7FB25B7F1605B77D3F758 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				4DFE9C7A2739C08F794A01B68818CBD2 /* Pods-NMFloatLabelSearchField_Example */,
+				129FFC51C43819F014C1AED373CE4DE7 /* Pods-NMFloatLabelSearchField_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		31514A0B825C82CF1DBFCF1B65D96767 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B8A84854F9B7A544470C1FD9A14D6E6B /* Info.plist */,
+				0F05DBE786859C41FC3FA8F514027F13 /* NMFloatLabelSearchField.modulemap */,
+				A68D0B8B8EAC5811057C77B6B30250AA /* NMFloatLabelSearchField.xcconfig */,
+				F3505DE75DB8D7CB0D5F19362338FC26 /* NMFloatLabelSearchField-dummy.m */,
+				2148F4E676D16840B5A25254668E0FEB /* NMFloatLabelSearchField-prefix.pch */,
+				2B56DD070065399ED0D14823686D6894 /* NMFloatLabelSearchField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/NMFloatLabelSearchField";
+			sourceTree = "<group>";
+		};
+		3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4629B77427348B46ACF191AE8B012ECC /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3858C0AA050D31516C1E9BE31CD613B2 /* Foundation.framework */,
+				C02D02D2B967B11E2FA3672F2D62A780 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		4CB2F19FE17F98D8D75BDB493855D972 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				96021B73AB3076CE469755681DF3DADF /* Info.plist */,
+				CF536E2A36AF5426B119EA4A20475CFD /* SkyFloatingLabelTextField.modulemap */,
+				D4B41BE8D4CB4B6421A83E322438D21F /* SkyFloatingLabelTextField.xcconfig */,
+				477402675ED0A2988A6B58AC17AAFFA7 /* SkyFloatingLabelTextField-dummy.m */,
+				8547A24E961A2A286801CCA0B57DA15D /* SkyFloatingLabelTextField-prefix.pch */,
+				CC73AA8035BD4108AD320A107A91F85C /* SkyFloatingLabelTextField-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SkyFloatingLabelTextField";
+			sourceTree = "<group>";
+		};
+		4DFE9C7A2739C08F794A01B68818CBD2 /* Pods-NMFloatLabelSearchField_Example */ = {
+			isa = PBXGroup;
+			children = (
+				8265D8EED583E06E885CEEF27CE36211 /* Info.plist */,
+				AE7C4056645C3AE5A38CE701FD03BF65 /* Pods-NMFloatLabelSearchField_Example.modulemap */,
+				828DED596115FAF06D1E1484F23F0A0E /* Pods-NMFloatLabelSearchField_Example-acknowledgements.markdown */,
+				E91D9EE3537AB063D23515F2FB8E701D /* Pods-NMFloatLabelSearchField_Example-acknowledgements.plist */,
+				F9B3F308A8139B46E083F5D6C12B9BA1 /* Pods-NMFloatLabelSearchField_Example-dummy.m */,
+				E18C67059018BE2B3B803B25D59F01C3 /* Pods-NMFloatLabelSearchField_Example-frameworks.sh */,
+				2FF39E15A80BCA2587010EB0A2185F47 /* Pods-NMFloatLabelSearchField_Example-resources.sh */,
+				7041E83DBCB9F341CD35970C76E82CA0 /* Pods-NMFloatLabelSearchField_Example-umbrella.h */,
+				F25F1D48731F0AF5030906CDACEA2F93 /* Pods-NMFloatLabelSearchField_Example.debug.xcconfig */,
+				4EF94640C5E5F35C5FF2321654D974A3 /* Pods-NMFloatLabelSearchField_Example.release.xcconfig */,
+			);
+			name = "Pods-NMFloatLabelSearchField_Example";
+			path = "Target Support Files/Pods-NMFloatLabelSearchField_Example";
+			sourceTree = "<group>";
+		};
+		5C3BA575486BE03CEE6578B1C004FD73 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				74EAFFA63BDBF87A5C676998FD597C07 /* NMFloatLabelSearchField.framework */,
+				619A2F978126C1F03A25D69D43C89141 /* Pods_NMFloatLabelSearchField_Example.framework */,
+				79FAAC39FD3DEE95401B4A7E6325DB6C /* Pods_NMFloatLabelSearchField_Tests.framework */,
+				60DB3DB5335E7CD46D91874EA2784991 /* SkyFloatingLabelTextField.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79804E161A191BDA78034D3DEB7698C3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38D1D425F36B390A3725C9BDAC38D1CA /* SkyFloatingLabelTextField.framework */,
+				4629B77427348B46ACF191AE8B012ECC /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				E8ED2E2B8947BC4E69B7DEFD47DF559D /* Development Pods */,
+				79804E161A191BDA78034D3DEB7698C3 /* Frameworks */,
+				3E538C50B5FBAB3A28B0BDDB5EEAA44A /* Pods */,
+				5C3BA575486BE03CEE6578B1C004FD73 /* Products */,
+				23488C6F7AB7FB25B7F1605B77D3F758 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A2288E648EEB03F949374A9A47FD2CA4 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				F0A19181FC15205792DA56733CF201BB /* LICENSE */,
+				73AB35B9C61E8DBBAFD486A1194C147F /* NMFloatLabelSearchField.podspec */,
+				DD54F979FE2EBC67418CD26AA8DB6E7A /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		A6D23DA0A7E9CB32CF18B58162F24BA4 /* NMFloatLabelSearchField */ = {
+			isa = PBXGroup;
+			children = (
+				0CF27122C442B21CF327BC0FED8DE3DB /* NMFloatLabelSearchField.swift */,
+				A2288E648EEB03F949374A9A47FD2CA4 /* Pod */,
+				31514A0B825C82CF1DBFCF1B65D96767 /* Support Files */,
+			);
+			name = NMFloatLabelSearchField;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BE06ED5906FCC1C2AA7EDA322B1D832D /* SkyFloatingLabelTextField */ = {
+			isa = PBXGroup;
+			children = (
+				DC2FD3B444C15779258A1E4254154328 /* SkyFloatingLabelTextField.swift */,
+				18AB6AF7BE4547CE64DE5711633CFFC0 /* SkyFloatingLabelTextFieldWithIcon.swift */,
+				DFEECCA755E56BD7670ACA5B8FDE8C49 /* UITextField+fixCaretPosition.swift */,
+				4CB2F19FE17F98D8D75BDB493855D972 /* Support Files */,
+			);
+			name = SkyFloatingLabelTextField;
+			path = SkyFloatingLabelTextField;
+			sourceTree = "<group>";
+		};
+		E8ED2E2B8947BC4E69B7DEFD47DF559D /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A6D23DA0A7E9CB32CF18B58162F24BA4 /* NMFloatLabelSearchField */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		969E7BF9C49F59D42C05AB6EED14563E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C61D7509434C316724F0B9CD36CABD1 /* NMFloatLabelSearchField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9F918F95FE2F9F5BF6E83AD7CCF113B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E9C51602D55D2E480D1E94FC8DD2CE0 /* Pods-NMFloatLabelSearchField_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D7DA0935AB3E17459B2C24ABA966CF0C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD8053BD5427FB4469545288BFED89B1 /* SkyFloatingLabelTextField-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9B7FE4BA6DD1782BF32306C296B6E19 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D940999F93DBCAE42502BFA24819A78C /* Pods-NMFloatLabelSearchField_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		06EADE6633B40DD5FEDF4FEAF5E23E42 /* Pods-NMFloatLabelSearchField_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E9ED038952AB7B08FE0C9C239968B50 /* Build configuration list for PBXNativeTarget "Pods-NMFloatLabelSearchField_Tests" */;
+			buildPhases = (
+				C0D6DDB4A9CF5DC4407AF04AD2964734 /* Sources */,
+				3A079084B22305F7101B790F9A629BCC /* Frameworks */,
+				F9B7FE4BA6DD1782BF32306C296B6E19 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-NMFloatLabelSearchField_Tests";
+			productName = "Pods-NMFloatLabelSearchField_Tests";
+			productReference = 79FAAC39FD3DEE95401B4A7E6325DB6C /* Pods_NMFloatLabelSearchField_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C9915FEF128A69C7BF9F438685BC2A3 /* NMFloatLabelSearchField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FB0E15E0E3DC61CBD8B7A19C0F384D2 /* Build configuration list for PBXNativeTarget "NMFloatLabelSearchField" */;
+			buildPhases = (
+				3BA84A4381E89A7887B0A69E06AD94EF /* Sources */,
+				AC33D8D5187D848A5175B95364C131F3 /* Frameworks */,
+				969E7BF9C49F59D42C05AB6EED14563E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F20E2E13679D2575781ABE30736D7903 /* PBXTargetDependency */,
+			);
+			name = NMFloatLabelSearchField;
+			productName = NMFloatLabelSearchField;
+			productReference = 74EAFFA63BDBF87A5C676998FD597C07 /* NMFloatLabelSearchField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5C8469D7974BF9C5D13E2E1D99221E8C /* SkyFloatingLabelTextField */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1866E5FB8455FEE13457E15DA740F65F /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */;
+			buildPhases = (
+				CCCB33A42ED223DEBF4DF61C22CD8415 /* Sources */,
+				C465CEFFCDDC37D091631067C60F5F67 /* Frameworks */,
+				D7DA0935AB3E17459B2C24ABA966CF0C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SkyFloatingLabelTextField;
+			productName = SkyFloatingLabelTextField;
+			productReference = 60DB3DB5335E7CD46D91874EA2784991 /* SkyFloatingLabelTextField.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C6AFD76E7113EB4B7CFF89A89B77A00E /* Pods-NMFloatLabelSearchField_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C1F4EF54790CCAAD3D25C96122E25AC8 /* Build configuration list for PBXNativeTarget "Pods-NMFloatLabelSearchField_Example" */;
+			buildPhases = (
+				9B74E42B52EAE36AAD102CE0F24B7A58 /* Sources */,
+				D049DBC4280C41F712DD45694009372E /* Frameworks */,
+				9F918F95FE2F9F5BF6E83AD7CCF113B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				597DC1AEB3B6714D2172C579F363DE97 /* PBXTargetDependency */,
+				ABF095ABE6F83E8DF62BA4B84994125F /* PBXTargetDependency */,
+			);
+			name = "Pods-NMFloatLabelSearchField_Example";
+			productName = "Pods-NMFloatLabelSearchField_Example";
+			productReference = 619A2F978126C1F03A25D69D43C89141 /* Pods_NMFloatLabelSearchField_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 5C3BA575486BE03CEE6578B1C004FD73 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C9915FEF128A69C7BF9F438685BC2A3 /* NMFloatLabelSearchField */,
+				C6AFD76E7113EB4B7CFF89A89B77A00E /* Pods-NMFloatLabelSearchField_Example */,
+				06EADE6633B40DD5FEDF4FEAF5E23E42 /* Pods-NMFloatLabelSearchField_Tests */,
+				5C8469D7974BF9C5D13E2E1D99221E8C /* SkyFloatingLabelTextField */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3BA84A4381E89A7887B0A69E06AD94EF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4DFABC5B303AC6A7AB155922ED66542 /* NMFloatLabelSearchField-dummy.m in Sources */,
+				1A8F207EBDB6A1E245509801653AD9C9 /* NMFloatLabelSearchField.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B74E42B52EAE36AAD102CE0F24B7A58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3E19C52B28D13326C9D877C4BBFC60A0 /* Pods-NMFloatLabelSearchField_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C0D6DDB4A9CF5DC4407AF04AD2964734 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EF05A20302F182F436EC6B77B6D4BDC5 /* Pods-NMFloatLabelSearchField_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCCB33A42ED223DEBF4DF61C22CD8415 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E247892C6F4F5BD1D78E0FBC6A65DBE9 /* SkyFloatingLabelTextField-dummy.m in Sources */,
+				0CDDFD61CC55FA4C35FDAD23565E2906 /* SkyFloatingLabelTextField.swift in Sources */,
+				34928B02A41F368DFA60867BC5391738 /* SkyFloatingLabelTextFieldWithIcon.swift in Sources */,
+				4AE760D2459FAB87B5EAEDB1DEE64B8C /* UITextField+fixCaretPosition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		597DC1AEB3B6714D2172C579F363DE97 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = NMFloatLabelSearchField;
+			target = 2C9915FEF128A69C7BF9F438685BC2A3 /* NMFloatLabelSearchField */;
+			targetProxy = 1811206871FBD9B36A7493DD1C1EC00C /* PBXContainerItemProxy */;
+		};
+		ABF095ABE6F83E8DF62BA4B84994125F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 5C8469D7974BF9C5D13E2E1D99221E8C /* SkyFloatingLabelTextField */;
+			targetProxy = 4424D96ED75265D8DB6447756EADB6F4 /* PBXContainerItemProxy */;
+		};
+		F20E2E13679D2575781ABE30736D7903 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SkyFloatingLabelTextField;
+			target = 5C8469D7974BF9C5D13E2E1D99221E8C /* SkyFloatingLabelTextField */;
+			targetProxy = 3859E0F187E5B3749AC3ACA92F0926D3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3DD053C6ECFBFF9DD0D0A8E881F21CB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4EF94640C5E5F35C5FF2321654D974A3 /* Pods-NMFloatLabelSearchField_Example.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Example/Pods-NMFloatLabelSearchField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMFloatLabelSearchField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		5306780CFEB70F97A7FD085815C96C50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65B2DB9179C3A3B6F3DC40457D604CEC /* Pods-NMFloatLabelSearchField_Tests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Tests/Pods-NMFloatLabelSearchField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMFloatLabelSearchField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5CDD19595CE09C41A404828E9B2D8487 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68D0B8B8EAC5811057C77B6B30250AA /* NMFloatLabelSearchField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMFloatLabelSearchField/NMFloatLabelSearchField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMFloatLabelSearchField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NMFloatLabelSearchField/NMFloatLabelSearchField.modulemap";
+				PRODUCT_NAME = NMFloatLabelSearchField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		827269710C98D60C14D46BC6AF9BF728 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		8F67D9BBBB0986B71F55EBC4964B16BE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B41BE8D4CB4B6421A83E322438D21F /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C6886BB8A11464848A2BEC5C842DB38 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F710614FA38A65D314322807319BB528 /* Pods-NMFloatLabelSearchField_Tests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Tests/Pods-NMFloatLabelSearchField_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMFloatLabelSearchField_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B4C5BC8A8476669E57B3B9C39366FBAD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4B41BE8D4CB4B6421A83E322438D21F /* SkyFloatingLabelTextField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SkyFloatingLabelTextField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SkyFloatingLabelTextField/SkyFloatingLabelTextField.modulemap";
+				PRODUCT_NAME = SkyFloatingLabelTextField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED7F5B1A2EADDCFC40C2B5D51AD8CC3F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F25F1D48731F0AF5030906CDACEA2F93 /* Pods-NMFloatLabelSearchField_Example.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-NMFloatLabelSearchField_Example/Pods-NMFloatLabelSearchField_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_NMFloatLabelSearchField_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FB47C47A6F61A45D362301B9A95C8C79 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68D0B8B8EAC5811057C77B6B30250AA /* NMFloatLabelSearchField.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/NMFloatLabelSearchField/NMFloatLabelSearchField-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/NMFloatLabelSearchField/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/NMFloatLabelSearchField/NMFloatLabelSearchField.modulemap";
+				PRODUCT_NAME = NMFloatLabelSearchField;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1866E5FB8455FEE13457E15DA740F65F /* Build configuration list for PBXNativeTarget "SkyFloatingLabelTextField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B4C5BC8A8476669E57B3B9C39366FBAD /* Debug */,
+				8F67D9BBBB0986B71F55EBC4964B16BE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5011B865762FC0C0A28ECEC4CB63DC68 /* Debug */,
+				827269710C98D60C14D46BC6AF9BF728 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FB0E15E0E3DC61CBD8B7A19C0F384D2 /* Build configuration list for PBXNativeTarget "NMFloatLabelSearchField" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB47C47A6F61A45D362301B9A95C8C79 /* Debug */,
+				5CDD19595CE09C41A404828E9B2D8487 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E9ED038952AB7B08FE0C9C239968B50 /* Build configuration list for PBXNativeTarget "Pods-NMFloatLabelSearchField_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5306780CFEB70F97A7FD085815C96C50 /* Debug */,
+				9C6886BB8A11464848A2BEC5C842DB38 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C1F4EF54790CCAAD3D25C96122E25AC8 /* Build configuration list for PBXNativeTarget "Pods-NMFloatLabelSearchField_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ED7F5B1A2EADDCFC40C2B5D51AD8CC3F /* Debug */,
+				3DD053C6ECFBFF9DD0D0A8E881F21CB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

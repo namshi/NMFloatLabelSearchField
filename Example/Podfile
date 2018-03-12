@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'NMFloatLabelSearchField_Example' do
+  pod 'NMFloatLabelSearchField', :path => '../'
+
+  target 'NMFloatLabelSearchField_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,6 @@
+framework module Pods_NMFloatLabelSearchField_Tests {
+  umbrella header "Pods-NMFloatLabelSearchField_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

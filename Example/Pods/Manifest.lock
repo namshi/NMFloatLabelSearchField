@@ -1,0 +1,19 @@
+PODS:
+  - NMFloatLabelSearchField (0.1.0):
+    - SkyFloatingLabelTextField (~> 3.4.0)
+  - SkyFloatingLabelTextField (3.4.0)
+
+DEPENDENCIES:
+  - NMFloatLabelSearchField (from `../`)
+
+EXTERNAL SOURCES:
+  NMFloatLabelSearchField:
+    :path: ../
+
+SPEC CHECKSUMS:
+  NMFloatLabelSearchField: bd2478b4bade6234e3fa901f91d06d3e3858cebf
+  SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
+
+PODFILE CHECKSUM: d9a3283c4b69927b665d6493043784af154f3afe
+
+COCOAPODS: 1.4.0
