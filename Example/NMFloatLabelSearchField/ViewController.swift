@@ -10,11 +10,12 @@ import UIKit
 import NMFloatLabelSearchField
 
 class ViewController: UIViewController {
+    
     @IBOutlet weak var simpleSearchField : NMFloatLabelSearchField!
     @IBOutlet weak var customSearchField : NMFloatLabelSearchField!
     @IBOutlet weak var simpleInlineSearchField : NMFloatLabelSearchField!
     @IBOutlet weak var customInlineSearchField : NMFloatLabelSearchField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,10 +24,10 @@ class ViewController: UIViewController {
         
         // 2 - Configure a custom search text field
         configureCustomSearchTextField()
-
+        
         // 3 - Configure an "inline" suggestions search text field
         configureSimpleInLineSearchTextField()
-
+        
         // 4 - Configure a custom "inline" suggestions search text field
         configureCustomInLineSearchTextField()
     }
@@ -49,16 +50,16 @@ class ViewController: UIViewController {
         
         // Define a header - Default: nothing
         let header = UILabel(frame: CGRect(x: 0, y: 0, width: customSearchField.frame.width, height: 30))
-        header.backgroundColor = UIColor.lightGray.withAlphaComponent(0.3)
+        header.backgroundColor = UIColor.lightGray.withAlphaComponent(0.8)
         header.textAlignment = .center
         header.font = UIFont.systemFont(ofSize: 14)
         header.text = "Pick your option"
-//        customSearchField.resultsListHeader = header
+        customSearchField.resultsListHeader = header
         
         
         // Modify current theme properties
         customSearchField.theme.font = UIFont.systemFont(ofSize: 12)
-        customSearchField.theme.bgColor = UIColor.lightGray.withAlphaComponent(0.2)
+        customSearchField.theme.bgColor = UIColor.lightGray.withAlphaComponent(0.5)
         customSearchField.theme.borderColor = UIColor.lightGray.withAlphaComponent(0.5)
         customSearchField.theme.separatorColor = UIColor.lightGray.withAlphaComponent(0.5)
         customSearchField.theme.cellHeight = 50
@@ -92,7 +93,7 @@ class ViewController: UIViewController {
         // Update data source when the user stops typing
         customSearchField.userStoppedTypingHandler = {
             if let criteria = self.customSearchField.text {
-                if criteria.characters.count > 1 {
+                if criteria.count > 1 {
                     
                     // Show loading indicator
                     self.customSearchField.showLoadingIndicator()
@@ -129,7 +130,7 @@ class ViewController: UIViewController {
         customInlineSearchField.startSuggestingInmediately = true
         
         // Set data source
-        customInlineSearchField.filterStrings(["gmail.com", "yahoo.com", "yahoo.com.ar"])
+        customInlineSearchField.filterStrings(["gmail.com", "yahoo.com", "yahoo.com.ar", "hotmail.com"])
     }
     
     // Hide keyboard when touching the screen
@@ -141,7 +142,7 @@ class ViewController: UIViewController {
     // Data Sources
     
     fileprivate func localCountries() -> [String] {
-        return ["America", "Bhutan", "China", "Denmark", "England", "Finland", "Greece", "Hungary", "India", "Jordan"]
+        return ["America", "Bhutan", "China", "Denmark", "England", "Finland", "Greece", "Hungary", "India", "Jordan", "Pakistan", "UAE", "United Kingdom"]
     }
     
     fileprivate func filterAcronymInBackground(_ criteria: String, callback: @escaping ((_ results: [NMFloatLabelSearchFieldItem]) -> Void)) {
@@ -187,5 +188,6 @@ class ViewController: UIViewController {
             task.resume()
         }
     }
+    
 }
 
