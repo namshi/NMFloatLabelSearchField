@@ -1,19 +1,23 @@
 PODS:
-  - NMFloatLabelSearchField (0.1.0):
+  - NMFloatLabelSearchField (1.0.0):
     - SkyFloatingLabelTextField (~> 3.4.0)
   - SkyFloatingLabelTextField (3.4.0)
 
 DEPENDENCIES:
   - NMFloatLabelSearchField (from `../`)
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - SkyFloatingLabelTextField
+
 EXTERNAL SOURCES:
   NMFloatLabelSearchField:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
-  NMFloatLabelSearchField: cf291472937421934bcf0c614eb6bf3990d374f4
+  NMFloatLabelSearchField: 6b4c78273fc4203bbd71be895a76f76717d6cb69
   SkyFloatingLabelTextField: 703aa1420b697392b1e7dba25571180dde018477
 
 PODFILE CHECKSUM: d9a3283c4b69927b665d6493043784af154f3afe
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3
