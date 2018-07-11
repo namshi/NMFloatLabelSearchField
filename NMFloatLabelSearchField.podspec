@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'NMFloatLabelSearchField'
-  s.version          = '0.1.0'
+  s.version          = '1.0.0'
   s.summary          = 'A lightweight subclass of UITextField to display floating hints and suggestion list as you type.'
 
 # This description is used to generate tags and improve search results.
@@ -22,13 +22,14 @@ A lightweight subclass of SkyFloatingLabelTextField to display dynamic floating 
                        DESC
 
   s.homepage         = 'https://github.com/namshi/NMFloatLabelSearchField'
-  s.screenshots      = 'https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_0.1.0.gif'
+  s.screenshots      = 'https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_1.0.0.gif'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Namshi' => 'mobile-dev@namshi.com' }
+  s.author           = { 'Namshi General Trading L.L.C' => 'mobile-dev@namshi.com' }
   s.source           = { :git => 'https://github.com/namshi/NMFloatLabelSearchField.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/namshidotcom'
 
   s.ios.deployment_target = '8.0'
+  s.swift_version = '4.1'
 
   s.source_files = 'NMFloatLabelSearchField/Classes/**/*'
 

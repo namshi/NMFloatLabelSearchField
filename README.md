@@ -5,7 +5,7 @@ It's a combination of [`SkyFloatingLabelTextField`](https://github.com/Skyscanne
 ### NMFloatLabelSearchField Demo Gif
 
 #### From Example App
-![Demo_v0.1.0](https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_0.1.0.gif)
+![Demo_v1.0.0](https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/NMFloatLabelSearchField_1.0.0.gif)
 
 #### From Namshi App
 ![Namshi App Ar](https://github.com/namshi/NMFloatLabelSearchField/blob/master/Screenshots/UsageInNamshiAr.gif)
@@ -17,7 +17,7 @@ It's a combination of [`SkyFloatingLabelTextField`](https://github.com/Skyscanne
 iOS 9.3 or above
 
 ### Swift Version
-Swift 4 supported from 0.1.0 version.
+Swift 4 supported from 1.0.0 version.
 
 ### CocoaPods
 The control is available through [CocoaPods](https://cocoapods.org/). `CocoaPods` can be installed using Ruby gems:
@@ -38,7 +38,7 @@ Then simply add `NMFloatLabelSearchField` to your Podfile:
 ```
 use_frameworks!
 
-pod 'NMFloatLabelSearchField', '~> 0.1.0'
+pod 'NMFloatLabelSearchField', '~> 1.0.0'
 ```
 
 Lastly, install the latest version of the library by running:
