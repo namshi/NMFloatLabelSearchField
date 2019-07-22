@@ -18,6 +18,7 @@ iOS 9.3 or above
 
 ### Swift Version
 Swift 4 supported from 1.0.0 version.
+Swift 4.2 supported from 2.0.0 version.
 
 ### CocoaPods
 The control is available through [CocoaPods](https://cocoapods.org/). `CocoaPods` can be installed using Ruby gems:
@@ -38,7 +39,7 @@ Then simply add `NMFloatLabelSearchField` to your Podfile:
 ```
 use_frameworks!
 
-pod 'NMFloatLabelSearchField', '~> 1.0.0'
+pod 'NMFloatLabelSearchField', '~> 2.0.0'
 ```
 
 Lastly, install the latest version of the library by running:
