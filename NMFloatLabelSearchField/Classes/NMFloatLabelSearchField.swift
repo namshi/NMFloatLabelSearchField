@@ -42,7 +42,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
             
             if let placeholderColor = theme.placeholderColor {
                 if let placeholderString = placeholder {
-                    self.attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSAttributedStringKey.foregroundColor: placeholderColor])
+                    self.attributedPlaceholder = NSAttributedString(string: placeholderString, attributes: [NSAttributedString.Key.foregroundColor: placeholderColor])
                 }
                 
                 self.placeholderLabel?.textColor = placeholderColor
@@ -85,7 +85,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     open var userStoppedTypingHandler: (() -> Void)?
     
     /// Set your custom set of attributes in order to highlight the string found in each item
-    open var highlightAttributes: [NSAttributedStringKey: AnyObject] = [.font: UIFont.boldSystemFont(ofSize: 10)]
+    open var highlightAttributes: [NSAttributedString.Key: AnyObject] = [.font: UIFont.boldSystemFont(ofSize: 10)]
     
     /// Start showing the default loading indicator, useful for searches that take some time.
     open func showLoadingIndicator() {
@@ -147,7 +147,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     fileprivate var timer: Timer? = nil
     fileprivate var placeholderLabel: UILabel?
     fileprivate static let cellIdentifier = "APNMFloatLabelSearchFieldCell"
-    fileprivate let indicator = UIActivityIndicatorView(activityIndicatorStyle: .gray)
+    fileprivate let indicator = UIActivityIndicatorView(style: .gray)
     fileprivate var maxTableViewSize: CGFloat = 0
     
     fileprivate var filteredResults = [NMFloatLabelSearchFieldItem]()
@@ -181,9 +181,9 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
         self.addTarget(self, action: #selector(NMFloatLabelSearchField.textFieldDidEndEditing), for: .editingDidEnd)
         self.addTarget(self, action: #selector(NMFloatLabelSearchField.textFieldDidEndEditingOnExit), for: .editingDidEndOnExit)
         
-        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardWillHide(_:)), name: NSNotification.Name.UIKeyboardWillHide, object: nil)
-        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardDidChangeFrame(_:)), name: NSNotification.Name.UIKeyboardDidChangeFrame, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardWillShow(_:)), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardWillHide(_:)), name: UIResponder.keyboardWillHideNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(NMFloatLabelSearchField.keyboardDidChangeFrame(_:)), name: UIResponder.keyboardDidChangeFrameNotification, object: nil)
     }
     
     override open func layoutSubviews() {
@@ -256,7 +256,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
             placeholderLabel?.backgroundColor = UIColor.clear
             placeholderLabel?.lineBreakMode = .byClipping
             
-            if let placeholderColor = self.attributedPlaceholder?.attribute(NSAttributedStringKey.foregroundColor, at: 0, effectiveRange: nil) as? UIColor {
+            if let placeholderColor = self.attributedPlaceholder?.attribute(NSAttributedString.Key.foregroundColor, at: 0, effectiveRange: nil) as? UIColor {
                 placeholderLabel?.textColor = placeholderColor
             } else {
                 placeholderLabel?.textColor = UIColor ( red: 0.8, green: 0.8, blue: 0.8, alpha: 1.0 )
@@ -315,11 +315,11 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
                 })
             }
             
-            superview?.bringSubview(toFront: tableView)
-            superview?.bringSubview(toFront: shadowView!)
+            superview?.bringSubviewToFront(tableView)
+            superview?.bringSubviewToFront(shadowView!)
             
             if self.isFirstResponder {
-                superview?.bringSubview(toFront: self)
+                superview?.bringSubviewToFront(self)
             }
             
             tableView.layer.borderColor = theme.borderColor.cgColor
@@ -335,7 +335,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     @objc open func keyboardWillShow(_ notification: Notification) {
         if !keyboardIsShowing && isEditing {
             keyboardIsShowing = true
-            keyboardFrame = ((notification as NSNotification).userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            keyboardFrame = ((notification as NSNotification).userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
             interactedWith = true
             prepareDrawTableResult()
         }
@@ -351,7 +351,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     
     @objc open func keyboardDidChangeFrame(_ notification: Notification) {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
-            self?.keyboardFrame = ((notification as NSNotification).userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+            self?.keyboardFrame = ((notification as NSNotification).userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
             self?.prepareDrawTableResult()
         }
     }
@@ -492,11 +492,11 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     }
     
     // Look for Font attribute, and if it exists, adapt to the subtitle font size
-    fileprivate func highlightAttributesForSubtitle() -> [NSAttributedStringKey: AnyObject] {
-        var highlightAttributesForSubtitle = [NSAttributedStringKey: AnyObject]()
+    fileprivate func highlightAttributesForSubtitle() -> [NSAttributedString.Key: AnyObject] {
+        var highlightAttributesForSubtitle = [NSAttributedString.Key: AnyObject]()
         
         for attr in highlightAttributes {
-            if attr.0 == NSAttributedStringKey.font {
+            if attr.0 == NSAttributedString.Key.font {
                 let fontName = (attr.1 as! UIFont).fontName
                 let pointSize = (attr.1 as! UIFont).pointSize * fontConversionRate
                 highlightAttributesForSubtitle[attr.0] = UIFont(name: fontName, size: pointSize)
