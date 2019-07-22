@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         customSearchField.forceRightToLeft = false
         
         // Customize highlight attributes - Default: Bold
-        customSearchField.highlightAttributes = [NSAttributedStringKey.backgroundColor: UIColor.yellow, NSAttributedStringKey.font: UIFont.boldSystemFont(ofSize: 12)]
+        customSearchField.highlightAttributes = [NSAttributedString.Key.backgroundColor: UIColor.yellow, NSAttributedString.Key.font: UIFont.boldSystemFont(ofSize: 12)]
         
         // Handle item selection - Default behaviour: item title set to the text field
         customSearchField.itemSelectionHandler = { filteredResults, itemPosition in
