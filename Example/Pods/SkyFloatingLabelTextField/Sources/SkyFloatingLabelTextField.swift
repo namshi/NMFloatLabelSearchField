@@ -82,7 +82,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
             attributedPlaceholder = NSAttributedString(
                 string: placeholder,
                 attributes: [
-                    NSAttributedStringKey.foregroundColor: color, NSAttributedStringKey.font: font
+                    NSAttributedString.Key.foregroundColor: color, NSAttributedString.Key.font: font
                 ]
             )
         #else
@@ -492,7 +492,7 @@ open class SkyFloatingLabelTextField: UITextField { // swiftlint:disable:this ty
             self.titleLabel.frame = frame
         }
         if animated {
-            let animationOptions: UIViewAnimationOptions = .curveEaseOut
+            let animationOptions: UIView.AnimationOptions = .curveEaseOut
             let duration = isTitleVisible() ? titleFadeInDuration : titleFadeOutDuration
             UIView.animate(withDuration: duration, delay: 0, options: animationOptions, animations: { () -> Void in
                 updateBlock()

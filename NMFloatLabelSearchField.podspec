@@ -34,6 +34,6 @@ A lightweight subclass of SkyFloatingLabelTextField to display dynamic floating 
   s.source_files = 'NMFloatLabelSearchField/Classes/**/*'
 
   s.frameworks = 'UIKit'
-  s.dependency 'SkyFloatingLabelTextField', '~> 3.4.0'
+  s.dependency 'SkyFloatingLabelTextField', '~> 3.6.0'
 
 end
