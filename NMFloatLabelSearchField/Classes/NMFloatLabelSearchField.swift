@@ -26,6 +26,9 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     /// Maximum height of the results list
     open var maxResultsListHeight = 0
     
+    /// height of the search results list
+    open var searchResultsListHeight = 0.0
+    
     /// Indicate if this field has been interacted with yet
     open var interactedWith = false
     
@@ -34,6 +37,13 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     
     /// How long to wait before deciding typing has stopped
     open var typingStoppedDelay = 0.8
+    
+    /// to show results in full screen. Takes searchResultsListHeight to calculate search resuls screen height
+    open var showFullScreen: Bool = false
+    
+    /// to auto select first search result on clicking done button in keyboard
+    open var selectOnDone: Bool = true
+
     
     /// Set your custom visual theme, or just choose between pre-defined NMFloatLabelSearchFieldTheme.lightTheme() and NMFloatLabelSearchFieldTheme.darkTheme() themes
     open var theme = NMFloatLabelSearchFieldTheme.lightTheme() {
@@ -89,6 +99,11 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     
     /// Start showing the default loading indicator, useful for searches that take some time.
     open func showLoadingIndicator() {
+        guard self.rightView == nil else { return }
+        let indicator = UIActivityIndicatorView(style: .gray)
+        indicator.hidesWhenStopped = true
+        self.indicator = indicator
+        self.rightView = indicator
         self.rightViewMode = .always
         indicator.startAnimating()
     }
@@ -98,8 +113,10 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     
     /// Hide the default loading indicator
     open func stopLoadingIndicator() {
+        guard let indicator = self.indicator else { return }
         self.rightViewMode = .never
         indicator.stopAnimating()
+        self.indicator = nil
     }
     
     /// When InlineMode is true, the suggestions appear in the same line than the entered string. It's useful for email domains suggestion for example.
@@ -135,6 +152,8 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     open var tableYOffset: CGFloat = 0.0
     open var tableCornerRadius: CGFloat = 2.0
     open var tableBottomMargin: CGFloat = 10.0
+    open var tableSeperatorInset: UIEdgeInsets = .zero
+    open var hideShadow = false
     
     ////////////////////////////////////////////////////////////////////////
     // Private implementation
@@ -147,7 +166,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     fileprivate var timer: Timer? = nil
     fileprivate var placeholderLabel: UILabel?
     fileprivate static let cellIdentifier = "APNMFloatLabelSearchFieldCell"
-    fileprivate let indicator = UIActivityIndicatorView(style: .gray)
+    fileprivate var indicator: UIActivityIndicatorView?
     fileprivate var maxTableViewSize: CGFloat = 0
     
     fileprivate var filteredResults = [NMFloatLabelSearchFieldItem]()
@@ -171,6 +190,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     open override func willMove(toWindow newWindow: UIWindow?) {
         super.willMove(toWindow: newWindow)
         tableView?.removeFromSuperview()
+        shadowView?.removeFromSuperview()
     }
     
     override open func willMove(toSuperview newSuperview: UIView?) {
@@ -194,17 +214,20 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
         } else {
             buildSearchTableView()
         }
-        
-        // Create the loading indicator
-        indicator.hidesWhenStopped = true
-        self.rightView = indicator
     }
     
     override open func rightViewRect(forBounds bounds: CGRect) -> CGRect {
         var rightFrame = super.rightViewRect(forBounds: bounds)
-        rightFrame.origin.x -= 5
+        rightFrame.size.width += 5
         return rightFrame
     }
+    
+    override open func leftViewRect(forBounds bounds: CGRect) -> CGRect {
+        var leftFrame = super.leftViewRect(forBounds: bounds)
+        leftFrame.size.width += 5
+        return leftFrame
+    }
+
     
     // Create the filter table and shadow view
     fileprivate func buildSearchTableView() {
@@ -213,8 +236,11 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
             tableView.layer.borderWidth = theme.borderWidth > 0 ? theme.borderWidth : 0.5
             tableView.dataSource = self
             tableView.delegate = self
-            tableView.separatorInset = UIEdgeInsets.zero
+            tableView.separatorInset = self.tableSeperatorInset
             tableView.tableHeaderView = resultsListHeader
+            if self.showFullScreen {
+                tableView.keyboardDismissMode = .onDrag
+            }
             if forceRightToLeft {
                 if #available(iOS 9.0, *) {
                     tableView.semanticContentAttribute = .forceRightToLeft
@@ -224,8 +250,11 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
             shadowView.backgroundColor = UIColor.lightText
             shadowView.layer.shadowColor = UIColor.black.cgColor
             shadowView.layer.shadowOffset = CGSize.zero
-            shadowView.layer.shadowOpacity = 1
-            
+            shadowView.layer.shadowOpacity = 0.5
+            shadowView.layer.shadowRadius = 4.0
+            shadowView.layer.masksToBounds = false
+
+            self.window?.addSubview(shadowView)
             self.window?.addSubview(tableView)
         } else {
             tableView = UITableView(frame: CGRect.zero)
@@ -276,7 +305,18 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
         if let tableView = tableView {
             guard let frame = self.superview?.convert(self.frame, to: nil) else { return }
             
-            if self.direction == .down {
+            if self.showFullScreen {
+                let tableHeight = self.searchResultsListHeight - tableYOffset
+                let tableWidth = frame.size.width - (2.0 * tableXOffset)
+                var tableViewFrame = CGRect(x: 0, y: 0, width: tableWidth, height: tableHeight)
+                tableViewFrame.origin = self.convert(tableViewFrame.origin, to: nil)
+                tableViewFrame.origin.x += tableXOffset
+                tableViewFrame.origin.y += frame.size.height + 2 + tableYOffset
+                UIView.animate(withDuration: 0.2, animations: { [weak self] in
+                    self?.tableView?.frame = tableViewFrame
+                    self?.shadowView?.frame = tableViewFrame
+                })
+            } else if self.direction == .down {
                 
                 var tableHeight: CGFloat = 0
                 if keyboardIsShowing, let keyboardHeight = keyboardFrame?.size.height {
@@ -300,23 +340,18 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
                 tableViewFrame.origin.y += frame.size.height + 2 + tableYOffset
                 UIView.animate(withDuration: 0.2, animations: { [weak self] in
                     self?.tableView?.frame = tableViewFrame
+                    self?.shadowView?.frame = tableViewFrame
                 })
-                
-                var shadowFrame = CGRect(x: 0, y: 0, width: frame.size.width - 6, height: 1)
-                shadowFrame.origin = self.convert(shadowFrame.origin, to: nil)
-                shadowFrame.origin.x += 3
-                shadowFrame.origin.y = tableView.frame.origin.y
-                shadowView!.frame = shadowFrame
             } else {
                 let tableHeight = min((tableView.contentSize.height), (UIScreen.main.bounds.size.height - frame.origin.y - theme.cellHeight))
                 UIView.animate(withDuration: 0.2, animations: { [weak self] in
                     self?.tableView?.frame = CGRect(x: frame.origin.x + 2, y: (frame.origin.y - tableHeight), width: frame.size.width - 4, height: tableHeight)
-                    self?.shadowView?.frame = CGRect(x: frame.origin.x + 3, y: (frame.origin.y + 3), width: frame.size.width - 6, height: 1)
+                    self?.shadowView?.frame = self?.tableView?.frame ?? .zero
                 })
             }
             
-            superview?.bringSubviewToFront(tableView)
             superview?.bringSubviewToFront(shadowView!)
+            superview?.bringSubviewToFront(tableView)
             
             if self.isFirstResponder {
                 superview?.bringSubviewToFront(self)
@@ -326,6 +361,8 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
             tableView.layer.cornerRadius = tableCornerRadius
             tableView.separatorColor = theme.separatorColor
             tableView.backgroundColor = theme.bgColor
+            
+            shadowView?.layer.cornerRadius = tableCornerRadius
             
             tableView.reloadData()
         }
@@ -396,13 +433,14 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     }
     
     @objc open func textFieldDidEndEditing() {
+        guard !self.showFullScreen else { return }
         clearResults()
         tableView?.reloadData()
         placeholderLabel?.attributedText = nil
     }
     
     @objc open func textFieldDidEndEditingOnExit() {
-        if let firstElement = filteredResults.first {
+        if let firstElement = filteredResults.first, self.selectOnDone {
             if let itemSelectionHandler = self.itemSelectionHandler {
                 itemSelectionHandler(filteredResults, 0)
             }
@@ -489,6 +527,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     fileprivate func clearResults() {
         filteredResults.removeAll()
         tableView?.removeFromSuperview()
+        shadowView?.removeFromSuperview()
     }
     
     // Look for Font attribute, and if it exists, adapt to the subtitle font size
@@ -551,8 +590,9 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
 extension NMFloatLabelSearchField: UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         tableView.isHidden = !interactedWith || (filteredResults.count == 0)
-        shadowView?.isHidden = !interactedWith || (filteredResults.count == 0)
         
+        shadowView?.isHidden = self.hideShadow ? true : (!interactedWith || (filteredResults.count == 0))
+
         if maxNumberOfResults > 0 {
             return min(filteredResults.count, maxNumberOfResults)
         } else {
@@ -571,9 +611,11 @@ extension NMFloatLabelSearchField: UITableViewDelegate, UITableViewDataSource {
         cell!.layoutMargins = UIEdgeInsets.zero
         cell!.preservesSuperviewLayoutMargins = false
         cell!.textLabel?.font = theme.font
+        cell!.textLabel?.numberOfLines = theme.numberOfLines
         cell!.detailTextLabel?.font = UIFont(name: theme.font.fontName, size: theme.font.pointSize * fontConversionRate)
         cell!.textLabel?.textColor = theme.fontColor
         cell!.detailTextLabel?.textColor = theme.subtitleFontColor
+        cell!.detailTextLabel?.numberOfLines = theme.numberOfLines
         
         cell!.textLabel?.text = filteredResults[(indexPath as NSIndexPath).row].title
         cell!.detailTextLabel?.text = filteredResults[(indexPath as NSIndexPath).row].subtitle
@@ -615,6 +657,7 @@ public struct NMFloatLabelSearchFieldTheme {
     public var fontColor: UIColor
     public var subtitleFontColor: UIColor
     public var placeholderColor: UIColor?
+    public var numberOfLines = 1
     
     init(cellHeight: CGFloat, bgColor:UIColor, borderColor: UIColor, separatorColor: UIColor, font: UIFont, fontColor: UIColor, subtitleFontColor: UIColor? = nil) {
         self.cellHeight = cellHeight
