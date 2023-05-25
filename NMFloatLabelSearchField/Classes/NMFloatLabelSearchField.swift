@@ -524,7 +524,7 @@ open class NMFloatLabelSearchField: SkyFloatingLabelTextField {
     }
     
     // Clean filtered results
-    fileprivate func clearResults() {
+    open func clearResults() {
         filteredResults.removeAll()
         tableView?.removeFromSuperview()
         shadowView?.removeFromSuperview()
